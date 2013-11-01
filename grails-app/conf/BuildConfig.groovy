@@ -56,6 +56,11 @@ grails.project.dependency.resolution = {
 		compile group: 'org.pac4j', name: 'pac4j-openid', version: '1.4.2-SNAPSHOT'
 		compile group: 'org.pac4j', name: 'pac4j-http', version: '1.4.2-SNAPSHOT'
 		compile group: 'org.pac4j', name: 'pac4j-cas', version: '1.4.2-SNAPSHOT'
+
+		//compile group: 'org.scribe', name: 'scribe-up', version: '1.3.2-SNAPSHOT'
+		//compile group: 'org.scribe', name: 'scribe', version: '1.3.5'
+
+
     }
 
     plugins {
