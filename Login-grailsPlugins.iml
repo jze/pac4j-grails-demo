@@ -64,11 +64,6 @@
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (Login-grailsPlugins)">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-cas/1.4.2-SNAPSHOT/pac4j-cas-1.4.2-SNAPSHOT.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-http/1.4.2-SNAPSHOT/pac4j-http-1.4.2-SNAPSHOT.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-openid/1.4.2-SNAPSHOT/pac4j-openid-1.4.2-SNAPSHOT.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-oauth/1.4.2-SNAPSHOT/pac4j-oauth-1.4.2-SNAPSHOT.jar!/" />
-          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/spring-security-pac4j/1.2.2-SNAPSHOT/spring-security-pac4j-1.2.2-SNAPSHOT.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/2.0.5/liquibase-core-2.0.5.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/grails/grails-datastore-web/2.0.2.RELEASE/grails-datastore-web-2.0.2.RELEASE.jar!/" />
@@ -89,6 +84,11 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.42/tomcat-embed-jasper-7.0.42.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina-ant/7.0.42/tomcat-catalina-ant-7.0.42.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-cas/1.4.2-SNAPSHOT/pac4j-cas-1.4.2-SNAPSHOT.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-http/1.4.2-SNAPSHOT/pac4j-http-1.4.2-SNAPSHOT.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-openid/1.4.2-SNAPSHOT/pac4j-openid-1.4.2-SNAPSHOT.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/pac4j-oauth/1.4.2-SNAPSHOT/pac4j-oauth-1.4.2-SNAPSHOT.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/pac4j/spring-security-pac4j/1.2.2-SNAPSHOT/spring-security-pac4j-1.2.2-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

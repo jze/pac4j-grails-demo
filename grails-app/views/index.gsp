@@ -17,12 +17,12 @@
 	MyOpenIdClient myopenidClient = (MyOpenIdClient) application.getAttribute("MyOpenIdClient");
 %>
 <h1>index</h1>
-<a href="facebook/index.gsp">Protected url by Facebook : facebook/index.gsp</a><br />
-<a href="twitter/index.gsp">Protected url by Twitter : twitter/index.gsp</a><br />
-<a href="form/index.gsp">Protected url by form authentication : form/index.gsp</a><br />
-<a href="basicauth/index.gsp">Protected url by basic auth : basicauth/index.gsp</a><br />
-<a href="cas/index.gsp">Protected url by CAS : cas/index.gsp</a><br />
-<form action="myopenid/index.gsp" method="POST">
+<a href="facebook/">Protected url by Facebook : facebook/index.gsp</a><br />
+<a href="twitter/">Protected url by Twitter : twitter/index.gsp</a><br />
+<a href="form/">Protected url by form authentication : form/index.gsp</a><br />
+<a href="basicauth/">Protected url by basic auth : basicauth/index.gsp</a><br />
+<a href="cas/">Protected url by CAS : cas/index.gsp</a><br />
+<form action="myopenid/" method="POST">
   <input type="text" name="openIdUser" value="http://xxx.myopenid.com/" />
   <input type="submit" value="Protected url by myopenid.com : myopenid/index.gsp" />
 </form>
