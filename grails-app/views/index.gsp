@@ -15,6 +15,11 @@
 	BasicAuthClient baClient = (BasicAuthClient) application.getAttribute("BasicAuthClient");
 	CasClient casClient = (CasClient) application.getAttribute("CasClient");
 	MyOpenIdClient myopenidClient = (MyOpenIdClient) application.getAttribute("MyOpenIdClient");
+
+    Google2Client google2Client = (Google2Client) application.getAttribute("Google2Client");
+    YahooClient yahooClient = (YahooClient) application.getAttribute("YahooClient") ;
+    WindowsLiveClient windowsLiveClient = (WindowsLiveClient) application.getAttribute("WindowsLiveClient");
+    GitHubClient gitHubClient = (GitHubClient) application.getAttribute("GitHubClient");
 %>
 <h1>index</h1>
 <a href="facebook/">Protected url by Facebook : facebook/index.gsp</a><br />
@@ -48,3 +53,10 @@ profile : <%=profile%>
   <input type="text" name="openIdUser" value="http://xxx.myopenid.com/" />
   <input type="submit" value="Authenticate with myopenid.com" />
 </form>
+
+<hr />
+<h1>added by me</h1>
+<a href="<%=google2Client.getRedirectionUrl(context)%>">Authenticate with Google</a><br />
+<a href="<%=yahooClient.getRedirectionUrl(context)%>">Authenticate with Yahoo</a><br />
+<a href="<%=windowsLiveClient.getRedirectionUrl(context)%>">Authenticate with WindowsLive</a><br />
+<a href="<%=gitHubClient.getRedirectionUrl(context)%>">Authenticate with GitHub</a><br />
