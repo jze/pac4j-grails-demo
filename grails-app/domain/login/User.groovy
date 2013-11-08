@@ -1,10 +1,15 @@
 package login
 
 class User {
-    String name
+    String firstName
+    String lastName
     String email
+    String provider
 
     static constraints = {
-        email email:true
+        email blank:false, email:true
+        firstName blank:false
+        lastName blank:false
+        provider blank:false
     }
 }

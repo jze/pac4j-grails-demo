@@ -20,16 +20,18 @@
 <a href="facebook/">Protected url by Facebook : facebook/index.gsp</a><br />
 <a href="twitter/">Protected url by Twitter : twitter/index.gsp</a><br />
 <br />
-<a href="/j_spring_security_logout">logout</a>
+
 <br /><br />
 <%Authentication auth = (Authentication) SecurityContextHolder.getContext().getAuthentication();
 UserProfile profile = null;
 if (auth != null && auth instanceof ClientAuthenticationToken) {
     ClientAuthenticationToken token = (ClientAuthenticationToken) auth; 
-    profile = token.getUserProfile();
-}
-%>
+    profile = token.getUserProfile();  %>
+
+<a href="/j_spring_security_logout">logout</a> <br/>
 profile : <%=profile%>
+<% }%>
+
 <br /><br />
 <hr />
 <a href="<%=fbClient.getRedirectionUrl(context)%>">Authenticate with Facebook</a><br />

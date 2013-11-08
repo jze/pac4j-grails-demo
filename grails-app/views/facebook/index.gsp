@@ -1,9 +1,15 @@
-<%@page import="org.pac4j.springframework.security.authentication.ClientAuthenticationToken"%>
+<%@page import="grails.converters.JSON; org.pac4j.springframework.security.authentication.ClientAuthenticationToken"%>
 <%@page import="org.springframework.security.core.context.SecurityContextHolder"%>
 <h1>protected area</h1>
 <a href="..">Back</a><br />
 <br /><br />
-<% ClientAuthenticationToken token = (ClientAuthenticationToken) SecurityContextHolder.getContext().getAuthentication(); %>
-profile : <%=token.getUserProfile()%><br />   <br />
+<% ClientAuthenticationToken token = (ClientAuthenticationToken) SecurityContextHolder.getContext().getAuthentication();
 
-<g:link controller="user" action="create" params="[email:'123@123.de', name:'peter']"> register</g:link>
+    String mail = token.getUserProfile().attributes.get("email")
+    String first_name = token.getUserProfile().attributes.get("first_name")
+    String last_name = token.getUserProfile().attributes.get("last_name")
+%>
+profile : <%=token.userProfile.attributes%><br />   <br />
+
+<g:link controller="user" action="create" params="[email:mail, firstName:first_name, lastName:last_name, provider:token.clientName]"> register</g:link>  <br/>
+
