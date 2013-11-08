@@ -4,6 +4,4 @@
 <a href="..">Back</a><br />
 <br /><br />
 <% ClientAuthenticationToken token = (ClientAuthenticationToken) SecurityContextHolder.getContext().getAuthentication(); %>
-profile : <%=token.getUserProfile()%><br />   <br />
-
-<g:link controller="user" action="create" params="[email:'123@123.de', name:'peter']"> register</g:link>
+profile : <%=token.getUserProfile()%><br />
