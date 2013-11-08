@@ -47,15 +47,7 @@ profile : <%=profile%>
 <a href="<%=fbClient.getRedirectionUrl(context)%>">Authenticate with Facebook</a><br />
 <a href="<%=twClient.getRedirectionUrl(context)%>">Authenticate with Twitter</a><br />
 <a href="<%=formClient.getRedirectionUrl(context)%>">Authenticate with form</a><br />
-<a href="<%=baClient.getRedirectionUrl(context)%>">Authenticate with basic auth</a><br />
-<a href="<%=casClient.getRedirectionUrl(context)%>">Authenticate with CAS</a><br />
-<form action="<%=myopenidClient.getRedirectionUrl(context)%>" method="POST">
-  <input type="text" name="openIdUser" value="http://xxx.myopenid.com/" />
-  <input type="submit" value="Authenticate with myopenid.com" />
-</form>
 
-<hr />
-<h1>added by me</h1>
 <a href="<%=google2Client.getRedirectionUrl(context)%>">Authenticate with Google</a><br />
 <a href="<%=yahooClient.getRedirectionUrl(context)%>">Authenticate with Yahoo</a><br />
 <a href="<%=windowsLiveClient.getRedirectionUrl(context)%>">Authenticate with WindowsLive</a><br />

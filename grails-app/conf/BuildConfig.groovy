@@ -50,12 +50,13 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.24'
-		
-		compile group: 'org.pac4j', name: 'spring-security-pac4j', version: '1.2.2-SNAPSHOT'
-		compile group: 'org.pac4j', name: 'pac4j-oauth', version: '1.4.2-SNAPSHOT'
-		compile group: 'org.pac4j', name: 'pac4j-openid', version: '1.4.2-SNAPSHOT'
-		compile group: 'org.pac4j', name: 'pac4j-http', version: '1.4.2-SNAPSHOT'
-		compile group: 'org.pac4j', name: 'pac4j-cas', version: '1.4.2-SNAPSHOT'
+
+        compile group: 'org.pac4j', name: 'pac4j-core', version: '1.4.1'
+		compile group: 'org.pac4j', name: 'spring-security-pac4j', version: '1.2.1'
+		compile group: 'org.pac4j', name: 'pac4j-oauth', version: '1.4.1'
+		compile group: 'org.pac4j', name: 'pac4j-openid', version: '1.4.1'
+		compile group: 'org.pac4j', name: 'pac4j-http', version: '1.4.1'
+		compile group: 'org.pac4j', name: 'pac4j-cas', version: '1.4.1'
 
 		//compile group: 'org.scribe', name: 'scribe-up', version: '1.3.2-SNAPSHOT'
 		//compile group: 'org.scribe', name: 'scribe', version: '1.3.5'
